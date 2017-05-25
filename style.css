@@ -6,14 +6,14 @@ html, body {
 .topbackground {
   position: relative;
   width: 100%;
-  height: 38vw;
+  height: 70vh;
   background-image: url(images/2Lmpagc.jpg);
   background-size: cover;
 }
 .nametitle {
   position: absolute;
   display: inline-block;
-  color: lightgray;
+  color: white;
   left: 8vw;
   bottom: 15vw;
   font-family: 'Play', sans-serif;
@@ -28,12 +28,11 @@ html, body {
   line-height: .3vw;
 }
 .navbar {
+  margin-top: -7vh;
   position: absolute;
-  bottom: 0vh;
   background: rgba(0,0,0,.6);
   width: 100vw;
   font-family: 'Play', sans-serif;
-
 }
 .navbar a {
   text-decoration: none;
@@ -41,7 +40,8 @@ html, body {
   padding: .5vh 3.4vw;
 }
 .navbar a:hover{
-  background-color: rgba(50,50,50,.8);
+  background-color: rgba(120,120,120,.6);
+  transition: .3s;
 }
 
 .navbar li {
@@ -53,7 +53,7 @@ html, body {
 
 .bodycontent {
   position: relative;
-  background-color: gray;
+  background-color: rgba(225,225,225,1);
   width: 100vw;
 }
 
@@ -64,22 +64,24 @@ html, body {
   margin-top: 5vh;
   width: 60vw;
   padding: 1vw;
-  background-color: lightgray;
+  background-color: rgba(180,180,180,1);
   font-family: "Khula", sans-serif;
+  box-shadow: 1px 1px 2px black
 }
 .post h1 {
   margin: 0;
   margin-bottom: 1vh;
   font-family: "Play", sans-serif;
+  
 }
 .skillsright {
   float: left;
   display: none;
-  background: grey;
-  color: #FFF;
+  background: #B37B7B;
+  color: white;
   padding-top: 1vh;
   width: 20vw;
-  height: 20.7vh;
+  height: 22vh;
   margin: 0;
   font-size: 1.2vw;
   overflow: hidden;
@@ -87,6 +89,7 @@ html, body {
 .skillsright ul{
   text-align: center;
   margin: 0;
+  margin-left: -1.5vw;
   list-style: none;
 }
 .skillsright li{
@@ -95,14 +98,62 @@ html, body {
 .skillsleft {
   float: left;
   width: 20vw;
-  font-size: 1.8vw;
+  font-size: 1.6vw;
   height: 22vh;
-  margin-left: 10vw;
 }
 .skillsleft h3{
+  position: relative;
   margin: .4vh 0;
   background: rgba(240,240,240,1);
-  height: 7vh;
-  line-height: 8vh;
+  height: 7.4vh;
+  line-height: 8.5vh;
   margin-top: 0;
+}
+#frontend img {
+  width: 2vw;
+  position: absolute;
+  top: 2vh;
+  right: .8vw;
+}
+#backend img {
+  width: 2vw;
+  position: absolute;
+  top: 2vh;
+  right: .8vw;
+}
+#others img {
+  width: 2vw;
+  position: absolute;
+  top: 2vh;
+  right: .8vw;
+}
+.skillsleft h3:hover {
+  color: white;
+  background-color: #B37B7B;
+  transition: .5s;
+}
+.skillexpand {
+  height: 23vh;
+  width: 40vw;
+  margin: 0 auto;
+}
+.fixed {
+  position: fixed;
+  top: 7vh;
+  z-index: 20;
+  background: rgba(0,0,0,.6);
+  width: 100vw;
+  font-family: 'Play', sans-serif;
+}
+.githubicon {
+  width: 54vw;
+  margin-left: 3vw;
+  z-index: 50;
+}
+.githubicon a{
+  padding: 1%;
+}
+#projects p {
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
 }
