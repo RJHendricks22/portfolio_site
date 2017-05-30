@@ -156,4 +156,40 @@ html, body {
 #projects p {
   font-size: 1.2em;
   font-family: "Lato", sans-serif;
+  width: 90%;
+  margin: 2vh auto;
+}
+#aboutme p{
+  font-size: 1.2em;
+  font-family: "Lato", sans-serif;
+  width: 90%;
+  margin: 2vh auto;
+  text-align: center;
+}
+#aboutme {
+  margin-bottom: 5vh;
+}
+footer {
+  height: 15vh;
+  width: 100%;
+  background-color: black;
+}
+footer h3{
+  margin: 0;
+  color: white;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  padding-top: .6em;
+}
+footer ul{
+  margin-left: 41.5%;
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 1%;
+}
+footer img{
+  width: 5%;
 }
