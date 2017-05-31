@@ -53,11 +53,12 @@ html, body {
 
 .bodycontent {
   position: relative;
-  background-color: rgba(225,225,225,1);
+  background-color: white;
   width: 100vw;
 }
 
 .post {
+  position: relative;
   text-align: center;
   display: inline-block;
   margin-left: 19vw;
@@ -72,7 +73,6 @@ html, body {
   margin: 0;
   margin-bottom: 1vh;
   font-family: "Play", sans-serif;
-  
 }
 .skillsright {
   float: left;
@@ -139,10 +139,12 @@ html, body {
 }
 .fixed {
   position: fixed;
-  top: 7vh;
+  margin-top: 0;
+  top: 0vh;
   z-index: 20;
   background: rgba(0,0,0,.6);
   width: 100vw;
+  height: 7vh;
   font-family: 'Play', sans-serif;
 }
 .githubicon {
@@ -192,4 +194,38 @@ footer li {
 }
 footer img{
   width: 5%;
+}
+.projectlist {
+  display: none;
+}
+#project1 {
+  display: block;
+}
+.toggleproject img{
+  width: 5%;
+  cursor: pointer;
+}
+#leftchev {
+  position: absolute;
+  left: 1%;
+  top: 40vh;
+}
+#leftchev:hover{
+  left: .5%;
+  top: 39.8vh;
+  transition: .4s;
+}
+#rightchev {
+  position: absolute;
+  right: 1%;
+  top: 40vh;
+}
+#rightchev:hover{
+  right: .5%;
+  top: 39.8vh;
+  transition: .4s;
+}
+.toggleproject img:hover{
+  width: 5.5%;
+  transition: .4s;
 }
