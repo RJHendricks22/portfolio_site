@@ -4,19 +4,19 @@ $( document ).ready(function() {
   var aboveHeight = $('.topbackground').outerHeight();
   console.log(aboveHeight)
 
-  $("#frontend").hover(function(){
+  $("#frontend").click(function(){
     $("#frontskills").animate({width:'toggle'}, 400);
     $("#backskills").css({display: 'none'});
     $("#otherskills").css({display: 'none'});
     return false;
   });
-  $("#backend").hover(function(){
+  $("#backend").click(function(){
     $("#backskills").animate({width:'toggle'}, 400);
     $("#frontskills").css({display: 'none'});
     $("#otherskills").css({display: 'none'});
     return false;
   });
-  $("#others").hover(function(){
+  $("#others").click(function(){
     $("#otherskills").animate({width:'toggle'}, 400);
     $("#backskills").css({display: 'none'});
     $("#frontskills").css({display: 'none'});
