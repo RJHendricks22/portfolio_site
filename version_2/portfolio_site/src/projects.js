@@ -7,7 +7,7 @@ export class Projects extends Component {
     this.state = {
       projects: [
         {name: "GameShot", imageUrl: "./Images/gameshot.png", description: "1"},
-        {name: "Brick Breaker", imageUrl: "./Images/brickbreakre.png", description: "2"},
+        {name: "Brick Breaker", imageUrl: "./Images/brickbreaker.png", description: "2"},
       ],
       projectIndex: 0
     }
@@ -15,29 +15,28 @@ export class Projects extends Component {
   };
   
   clickRight(action){
+    action.preventDefault();
     if(this.state.projectIndex < this.state.projects.length-1) {
-      this.state.projectIndex += 1
-      console.log(this.state.projectIndex)
-      console.log(this.state.projects[this.state.projectIndex])
-      
+      let index = this.state.projectIndex + 1
+      this.setState({
+        projectIndex: index
+      }) 
     } else {
-      this.state.projectIndex = 0
-      console.log(this.state.projectIndex)
-      console.log(this.state.projects[this.state.projectIndex])
+      this.setState({
+        projectIndex: 0
+      })
     }
   }
   
   render(){
-    let projectId = this.state.projectIndex
-    let projectrender = this.state.projects[projectId].name
+    let currentProject = this.state.projects[this.state.projectIndex]
     
     return (
       <div id="projectsContainer">
-        <h2>Project Title</h2>
+        <h2>{currentProject.name}</h2>
         <h3 onClick={this.clickRight}>Next</h3>
-        <h2>{this.state.projectIndex}</h2>
-        <img src="" />
-        <h3>{projectrender}</h3>
+        <img src={require(`${currentProject.imageUrl}`)} className="projectImage"/>
+        <h3>{currentProject.description}</h3>
       </div>
     );
   }
