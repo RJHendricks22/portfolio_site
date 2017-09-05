@@ -26,12 +26,14 @@ class App extends Component {
     return (
       <div className="App">
         <Titleblock />
+        <div className="navbarcontainer">
         <ul className="Navbar1">
           <li onClick={this.centerViewPanel} value="1" >Skills </li>
           <li onClick={this.centerViewPanel} value="2" >Projects</li>
           <li onClick={this.centerViewPanel} value="3" >About Me</li>
           <li onClick={this.centerViewPanel} value="0" >Home</li>
         </ul>
+          </div>
         <div>{renderCenter}</div>
       </div>
     );

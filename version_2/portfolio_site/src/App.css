@@ -1,7 +1,8 @@
 body {
   background-image: url(Images/portfoliobackground.png);
   background-size: contain;
-  height: 100vh;
+  margin: 0;
+  height: 95vh;
   width: 100vw;
   z-index: -500;
   position: relative;
@@ -116,5 +117,26 @@ body {
 }
 #footer {
   position: absolute;
-  bottom: 10vh;
+  bottom: 1vh;
+  font-size: 10px;
+  color: darkgray;
+  margin-left: 5%;
+}
+#footer a {
+  text-decoration: none;
+  color: darkgray;
+}
+.Navbar1 {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  list-style: none;
+}
+.Navbar1 li {
+  margin-left: -30px;
+}
+.navbarcontainer {
+  display: flex;
+  justify-content: center;
 }
