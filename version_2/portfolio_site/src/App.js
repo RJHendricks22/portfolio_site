@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { Titleblock } from './titleblock';
 import { Projects } from './projects';
+import { MySkills } from './myskills';
+import { AboutMe } from './aboutme';
 
 class App extends Component {
   constructor(props){
@@ -19,7 +21,7 @@ class App extends Component {
   }
   
   render() {
-    let centerPanels = [<Titleblock />, <Projects />]
+    let centerPanels = ["", <MySkills />, <Projects />, <AboutMe />]
     let renderCenter = centerPanels[this.state.centerView]
     return (
       <div className="App">

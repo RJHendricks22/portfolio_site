@@ -1,6 +1,6 @@
 body {
   background-image: url(Images/portfoliobackground.png);
-  background-size: cover;
+  background-size: contain;
   height: 100vh;
   width: 100vw;
   z-index: -500;
@@ -9,33 +9,112 @@ body {
 }
 
 .titleBlock {
-  position: absolute;
   text-align: center;
   color: lightslategray;
-  top: 10vh;
-  left: 40vw;
-  display: inline-block;
 }
 
-.titleBlock h1{
+.myName{
   font-size: 40px;
+  display: flex;
+  justify-content: center;
 }
 
-.titleBlock h2{
+.myTitle{
   font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-#projectsContainer {
-  width: 50vw;
-  height: 55vh;
-  position: absolute;
-  left: 25vw;
-  top: 30vh;
+.projectsContainer {
+  width: 50%;
+  height: 60%;
+  position: relative;
   background-color: rgba(100,100,100,.5);
   text-align: center;
+  overflow: hidden;
 }
 
 .projectImage {
-  width: 400px;
-  height: 300px;
+  width: 80%;
+  height: 80%;
+}
+
+#rightarrow {
+  position: absolute;
+  top: 49%;
+  right: 4%;
+  width: 25px;
+  height: 25px;
+  transform: rotate(90deg)
+}
+#leftarrow {
+  position: absolute;
+  top: 49%;
+  left: 4%;
+  width: 25px;
+  height: 25px;
+  transform: rotate(-90deg)
+}
+.projectArrows {
+  opacity: .8;
+}
+.myskillscontainer {
+  width: 50vw;
+  height: 60vh;
+  
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.myskillscontainer div {
+  list-style: none;
+  margin: 0;
+  float: left;
+  width: 30%;
+  margin: 1%;
+  overflow: hidden;
+  background-color: rgba(100,100,100,.5);
+}
+.myskillscontainer p {
+  height: 5%;
+  font-size: 1.5em;
+  overflow: hidden;
+  
+}
+#myskills {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#myprojects {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#AboutMe {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutmecontainer {
+  height: 20vh;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.aboutmecontainer img {
+  width: 20%;
+  height: 100%;
+  margin: 5px;
+}
+#footer {
+  position: absolute;
+  bottom: 10vh;
 }
