@@ -100,8 +100,8 @@ h1 {
   list-style: none;
   margin: 0;
   float: left;
-  width: 30%;
-  margin: 1%;
+  width: 16em;
+  margin: .5em;
   overflow: hidden;
   background-color: rgba(100,100,100,.5);
 }
