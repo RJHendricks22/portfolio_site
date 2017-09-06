@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './animate.css';
 import { Titleblock } from './titleblock';
 import { Projects } from './projects';
 import { MySkills } from './myskills';

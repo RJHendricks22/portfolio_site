@@ -8,16 +8,22 @@ body {
   position: relative;
   color: white;
 }
-
+h1 {
+  font-family: "Play";
+  margin: 10px;
+}
 .titleBlock {
   text-align: center;
   color: lightslategray;
+  margin-top: 3%;
 }
 
-.myName{
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
+.titleBlock img:first-child {
+  width: 35%;
+}
+
+.titleBlock img:last-child {
+  width: 25%;
 }
 
 .myTitle{
@@ -33,6 +39,8 @@ body {
   background-color: rgba(100,100,100,.5);
   text-align: center;
   overflow: hidden;
+  font-size: 18px;
+  font-family: "Lato";
 }
 
 .projectImage {
@@ -48,6 +56,20 @@ body {
   height: 25px;
   transform: rotate(90deg)
 }
+#rightarrow:hover {
+  width: 30px;
+  height: 30px;
+  top: 48.5%;
+  right: 3.5%;
+  transition-duration: .15s;
+}
+#leftarrow:hover {
+  width: 30px;
+  height: 30px;
+  top: 48.5%;
+  left: 3.5%;
+  transition-duration: .15s;
+}
 #leftarrow {
   position: absolute;
   top: 49%;
@@ -58,11 +80,11 @@ body {
 }
 .projectArrows {
   opacity: .8;
+  cursor: pointer;
 }
 .myskillscontainer {
   width: 50vw;
   height: 60vh;
-  
   text-align: center;
   overflow: hidden;
   display: flex;
@@ -89,12 +111,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Play";
 }
 #myprojects {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#myprojects h1{
+  font-family: "Play";
+}
+#myprojects h2 {
+  font-family: "Play";
 }
 #AboutMe {
   text-align: center;
@@ -103,16 +132,28 @@ body {
   align-items: center;
 }
 .aboutmecontainer {
-  height: 20vh;
-  width: 50vw;
+  height: 25vh;
+  width: 60vw;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 10px;
+  font-size: 18px;
+  font-family: "Lato";
 }
-
+.aboutmetype {
+  width: 40vw;
+  background: rgba(100,100,100,.3);
+  padding: 15px;
+}
+.aboutmetype p {
+  margin: 0;
+  font-kerning: none;
+  word-spacing: 3px;
+}
 .aboutmecontainer img {
-  width: 20%;
-  height: 100%;
+  width: 205px;
+  height: 235px;
   margin: 5px;
 }
 #footer {
@@ -132,9 +173,19 @@ body {
   justify-content: space-between;
   align-content: center;
   list-style: none;
+  font-family: "Play";
+  font-size: 20px;
 }
 .Navbar1 li {
-  margin-left: -30px;
+  margin-left: -38px;
+  padding: 10px;
+}
+.Navbar1 li:hover{
+  color: lightblue;
+  background: rgba(100,100,100,.3);
+  padding: 10px;
+  transition-duration: .2s;
+  cursor: pointer;
 }
 .navbarcontainer {
   display: flex;

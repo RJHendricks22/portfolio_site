@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './animate.css';
 
 export class Projects extends Component {
   constructor(props){
@@ -52,12 +53,12 @@ export class Projects extends Component {
     return (
       <div id="myprojects">
         <h1>Projects</h1>
-        <div className="projectsContainer">
+        <div className="projectsContainer animated fadeIn">
             <h2>{currentProject.name}</h2>
             <img id="leftarrow" className="projectArrows" src={require("./Images/uparrow.png")} onClick={this.clickLeft} />
             <img id="rightarrow" className="projectArrows" src={require("./Images/uparrow.png")} onClick={this.clickRight} />
             <img src={require(`${currentProject.imageUrl}`)} className="projectImage"/>
-            <h3>{currentProject.description}</h3>
+            <p>{currentProject.description}</p>
         </div>
       </div>
     );
