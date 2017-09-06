@@ -1,3 +1,6 @@
+html {
+  background-color: black;
+}
 body {
   background-image: url(Images/portfoliobackground.png);
   background-size: contain;
@@ -222,5 +225,12 @@ h1 {
 #contactContainer {
   width: 80em;
   height: 30em;
-  margin: 0 auto;
+  margin: 5em auto;
+  text-align: center;
+}
+#welcomePanel {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  opacity: .7;
 }

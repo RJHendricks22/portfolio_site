@@ -8,12 +8,11 @@ export class Contact extends Component {
     
     return(
       <div id="contactContainer">
-        <h1>Welcome</h1>
-        <h1>Contact Info</h1>
+        <h1>Contact Me</h1>
         <div className="contactLinks">
-          <img src={require("./Images/linkedin.png")} />
-          <img src={require("./Images/emailico.png")} />
-          <img src={require("./Images/githubwhite.png")} />
+          <div className="animated fadeInUpBig"><a href="https://www.linkedin.com/in/raymond-hendricks/"><img src={require("./Images/linkedin.png")} /></a></div>
+          <div className="animated3 fadeInUpBig"><a href="mailto:rayjhendricks22@gmail.com"><img src={require("./Images/emailico.png")} /></a></div>
+          <div className="animated4 fadeInUpBig"><a href="https://github.com/RJHendricks22"><img src={require("./Images/githubwhite.png")} /></a></div>
         </div>
       </div>
     );

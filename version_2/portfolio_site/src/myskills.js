@@ -22,7 +22,7 @@ export class MySkills extends Component {
             <p>Ruby</p>
             <p>Rails</p>
             <p>Node JS</p>
-            <p>Express</p>
+            <p>Express JS</p>
             <p>PostgreSQL</p>
             <p>AJAX</p>
           </div>

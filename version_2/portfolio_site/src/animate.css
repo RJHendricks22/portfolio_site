@@ -12,6 +12,18 @@
   animation-duration: 1s;
   animation-fill-mode: both;
 }
+.animated2 {
+  animation-duration: 3.5s;
+  animation-fill-mode: both;
+}
+.animated3 {
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+.animated4 {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
 
 .animated.infinite {
   animation-iteration-count: infinite;
@@ -296,3 +308,4 @@
 .fadeOutUpBig {
   animation-name: fadeOutUpBig;
 }
+
