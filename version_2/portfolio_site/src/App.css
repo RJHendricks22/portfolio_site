@@ -15,7 +15,7 @@ h1 {
 .titleBlock {
   text-align: center;
   color: lightslategray;
-  margin-top: 3%;
+  margin-top: 1em;
 }
 
 .titleBlock img:first-child {
@@ -33,19 +33,21 @@ h1 {
 }
 
 .projectsContainer {
-  width: 50%;
-  height: 60%;
+  width: 48em;
+  height: 33.5em;
   position: relative;
   background-color: rgba(100,100,100,.5);
   text-align: center;
   overflow: hidden;
   font-size: 18px;
   font-family: "Lato";
+  overflow: hidden;
+  padding: 10px;
 }
 
 .projectImage {
-  width: 80%;
-  height: 80%;
+  width: 38em;
+  height: 21em;
 }
 
 #rightarrow {
@@ -158,26 +160,28 @@ h1 {
 }
 #footer {
   position: absolute;
-  bottom: 1vh;
+  bottom: .5em;
+  left: 40em;
   font-size: 10px;
   color: darkgray;
-  margin-left: 5%;
 }
 #footer a {
   text-decoration: none;
   color: darkgray;
 }
 .Navbar1 {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-content: center;
   list-style: none;
   font-family: "Play";
-  font-size: 20px;
+  font-size: 2em;
+  margin: 0;
+  margin-top: 1em;
 }
+
 .Navbar1 li {
-  margin-left: -38px;
   padding: 10px;
 }
 .Navbar1 li:hover{
@@ -190,4 +194,33 @@ h1 {
 .navbarcontainer {
   display: flex;
   justify-content: center;
+}
+#githubproject {
+  float: left;
+  position: absolute;
+  top: 1em;
+  right: 8em;
+  width: 40px;
+}
+#webproject {
+  float: left;
+  position: absolute;
+  top: 1em;
+  right: 5.3em;
+  width: 40px;
+}
+.contactLinks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactLinks img{
+  width: 9em;
+  opacity: .7;
+  margin: 2em;
+}
+#contactContainer {
+  width: 80em;
+  height: 30em;
+  margin: 0 auto;
 }
