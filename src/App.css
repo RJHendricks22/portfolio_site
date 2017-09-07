@@ -3,9 +3,9 @@ html {
 }
 body {
   background-image: url(Images/portfoliobackground.png);
-  background-size: contain;
+  background-size: cover;
   margin: 0;
-  height: 95vh;
+  height: 98vh;
   width: 100vw;
   z-index: -500;
   position: relative;
@@ -134,8 +134,8 @@ h1 {
   align-items: center;
 }
 .aboutmecontainer {
-  height: 25vh;
-  width: 60vw;
+  height: 15em;
+  width: 56em;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -144,7 +144,7 @@ h1 {
   font-family: "Lato";
 }
 .aboutmetype {
-  width: 40vw;
+  width: 39em;
   background: rgba(100,100,100,.3);
   padding: 15px;
 }
