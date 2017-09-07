@@ -88,13 +88,12 @@ h1 {
   cursor: pointer;
 }
 .myskillscontainer {
-  width: 50vw;
-  height: 60vh;
+  width: 60vw;
+  height: 40vh;
   text-align: center;
-  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 .myskillscontainer div {
   list-style: none;
@@ -106,10 +105,8 @@ h1 {
   background-color: rgba(100,100,100,.5);
 }
 .myskillscontainer p {
-  height: 5%;
   font-size: 1.5em;
   overflow: hidden;
-  
 }
 #myskills {
   text-align: center;
