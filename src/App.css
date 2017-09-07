@@ -88,8 +88,8 @@ h1 {
   cursor: pointer;
 }
 .myskillscontainer {
-  width: 60vw;
-  height: 40vh;
+  width: 90em;
+  height: 25em;
   text-align: center;
   display: flex;
   justify-content: center;
