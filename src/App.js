@@ -7,6 +7,7 @@ import { MySkills } from './myskills';
 import { AboutMe } from './aboutme';
 import { Homepage } from './homepage';
 import { Contact } from './contact';
+import 'babel-polyfill';
 
 class App extends Component {
   constructor(props){
