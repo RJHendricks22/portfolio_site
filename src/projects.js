@@ -53,7 +53,6 @@ export class Projects extends Component {
     
     return (
       <div id="myprojects">
-        <h1>Projects</h1>
         <div className="projectsContainer animated fadeIn">
             <h2>{currentProject.name}</h2>
             <img id="leftarrow" className="projectArrows" src={require("./Images/uparrow.png")} onClick={this.clickLeft} />
