@@ -40,8 +40,8 @@ class App extends Component {
         <Titleblock />
         <div className="navbarcontainer">
         <ul className="Navbar1">
-          <li onClick={this.centerViewPanel} style={confirmationStyle(this.state.centerView, 1)} value="1" >Skills </li>
           <li onClick={this.centerViewPanel} style={confirmationStyle(this.state.centerView, 2)} value="2" >Projects</li>
+          <li onClick={this.centerViewPanel} style={confirmationStyle(this.state.centerView, 1)} value="1" >Skills </li>
           <li onClick={this.centerViewPanel} style={confirmationStyle(this.state.centerView, 3)} value="3" >About Me</li>
           <li onClick={this.centerViewPanel} style={confirmationStyle(this.state.centerView, 4)} value="4" >Contact</li>
         </ul>

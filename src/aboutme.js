@@ -8,7 +8,6 @@ export class AboutMe extends Component {
     
     return(
       <div id="AboutMe">
-        <h1>About Me</h1>
         <div className="aboutmecontainer animated fadeIn">
           <img src={require("./Images/hs1.jpg")} />
           <div className="aboutmetype">

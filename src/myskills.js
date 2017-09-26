@@ -8,7 +8,6 @@ export class MySkills extends Component {
     
     return (
       <div id="myskills">
-        <h1>My Skills</h1>
         <div className="myskillscontainer">
           <div className="animated fadeInLeft">
             <p>HTML5</p>
