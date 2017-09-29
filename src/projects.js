@@ -7,11 +7,27 @@ export class Projects extends Component {
     super(props);
     this.state = {
       projects: [
-        {name: "GameShot", imageUrl: "./Images/gameshot.png", description: "GameShot was built using Rails and various Ruby gems.  I implemented Paperclip with AWS for image upload capabilities, and Ransack for user database search to 'Follow' people and see their posts.  This enabled me to create a \"Timeline\" functionality.  I used Devise for user authentication and creation.", github: "https://github.com/RJHendricks22/gaming_instagram", website: "https://gameshot.herokuapp.com/"},
-        {name: "Brick Breaker", imageUrl: "./Images/brickbreaker.png", description: "Brick Breaker is built solely with Javascript.  The game is an animation frame canvas element, allowing me to move the ball through animation loop and detect interactions between the objects.  I researched collision detection and created my own detection logic to properly bounce the ball off the blocks, window boundaries and the paddle.", github: "https://github.com/RJHendricks22/rjhendricks22.github.io", website: "https://rjhendricks22.github.io/"},
-        {name: "Attr_Reader", imageUrl: "./Images/attrreader.png", description: "Attr_Reader is a group project completed in Rails where a user can request to trade books with other users.  Each user can put books on their virtual shelf that they are willing to trade.  Once a book is requested, an email is sent to the book owner with shipping information to send the book to the requestor.  We used the google books API for a list of books, Ransack, Devise, HTTParty and Action Mailer.", github: "https://github.com/RJHendricks22/Flourish_and_Blotts", website: "http://attrreader3.herokuapp.com/"},
-        {name: "MagicTCG Card Builder", imageUrl: "./Images/magiccardbuilder.png", description: "This Express App enables a user to create an account and customize their own magic trading card, which is saved to their account.  I used B-Crypt, Body Parser, Method Override, Multer, Mustache, and PG-Promise.  For the card animation, I used animate.css.  I used MagicTheGathering.io to pull in examples of existing trading cards from the same 2012 Base Set that you can customize from", github: "https://github.com/RJHendricks22/MagicTGCardBuilder", website: "https://github.com/RJHendricks22/MagicTGCardBuilder"},
-        {name: "Custom Mad Libs Builder", imageUrl: "./Images/constructionimage.jpg", description: "Still in development, this is a ReactJS app that allows the user to copy and paste a story from anywhere, or even type up their own story which they can then turn into a Mad Lib.  After finishing the story, the app allows you to toggle each word to the part of speech that you desire \(noun, adjective, verb, etc.\).  Once ready, hit the render button and your story renders with input boxes wherever a blank was chosen along with the required part of speech, giving you a digital Mad Lib to fill out with your friends!", github: "https://github.com/RJHendricks22/mad-libs-site", website: "https://github.com/RJHendricks22/mad-libs-site"}
+        {name: "GameShot", imageUrl: "./Images/gameshot.png", description: ["Built using Rails and various Ruby gems", "based on functionality of Instagram (image posts, comments, followers, timeline) with an emphasis on PC Gamers"],
+        technologies: ["Ruby on Rails","JavaScript","HTML/CSS","PostgreSQL","AWS S3","Paperclip","Devise","Ransack","HTTParty"],
+        github: "https://github.com/RJHendricks22/gaming_instagram", website: "https://gameshot.herokuapp.com/"},
+        {name: "Brick Breaker",
+        imageUrl: "./Images/brickbreaker.png", 
+        description: ["Built in JavaScript, using HTML canvas and CSS", "Animation frames on canvas element allow ball velocity", "Created all hit detection functions from scratch"],
+        technologies: ["JavaScript","HTML/CSS"], 
+        github: "https://github.com/RJHendricks22/rjhendricks22.github.io", website: "https://rjhendricks22.github.io/"},
+        {name: "Attr_Reader", imageUrl: "./Images/attrreader.png", 
+        description: ["Group project built in Rails","Users can request to trade books with other users", "Virtual Bookshelf rendered through ERB and HTML","Requested books send email with shipping info to book owner"],
+        technologies: ["Ruby on Rails","JavaScript","HTML/CSS","GoogleBooks API","Ransack","Action Mailer","HTTParty","Devise"],
+        github: "https://github.com/RJHendricks22/Flourish_and_Blotts",
+        website: "http://attrreader3.herokuapp.com/"},
+        {name: "MagicTCG Card Builder", imageUrl: "./Images/magiccardbuilder.png", description: ["NodeJS Express App","Users create an account to customize their own magic trading card", "Complete cards saved to account profile"],
+        technologies: ["NodeJS","ExpressJS","JavaScript","MagicTheGathering.io API","HTML/CSS","B-Crypt","BodyParser","Multer","Mustache","Animate.css"], 
+         github: "https://github.com/RJHendricks22/MagicTGCardBuilder", 
+         website: "https://github.com/RJHendricks22/MagicTGCardBuilder"},
+        {name: "Custom Mad Libs Builder", imageUrl: "./Images/constructionimage.jpg", description: ["ReactJS app allowing users to generate custom MadLib", "Copy and past story, choose where blanks will go","Pick what part of speech each blank is","Render the story and play!"],
+         technologies: ["ReactJS","JavaScript","HTML/CSS","Webpack","Babel.js"],
+         github: "https://github.com/RJHendricks22/mad-libs-site",
+         website: "https://github.com/RJHendricks22/mad-libs-site"}
       ],
       projectIndex: 0
     }
@@ -50,6 +66,9 @@ export class Projects extends Component {
   render(){
     let currentProject = this.state.projects[this.state.projectIndex]
     
+    let descriptionRender = currentProject.description.map( desc => <li>{desc}</li>);
+                                     
+    let technologiesRender = currentProject.technologies.map( tech => <li>{tech}</li>);
     
     return (
       <div id="myprojects">
@@ -60,7 +79,8 @@ export class Projects extends Component {
             <a href={currentProject.website}><img src={require(`${currentProject.imageUrl}`)} className="projectImage"/></a>
             <a href={currentProject.github}><img id="githubproject" src={require("./Images/githubwhite.png")} /></a>
             <a href={currentProject.website}><img id="webproject" src={require("./Images/whiteglobe.png")} /></a>
-            <p>{currentProject.description}</p>
+          <ul className="descriptionList">{descriptionRender}</ul>
+          <ul className="techList">{technologiesRender}</ul>
         </div>
       </div>
     );
