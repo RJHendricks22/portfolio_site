@@ -72,10 +72,13 @@ export class Projects extends Component {
     
     return (
       <div id="myprojects">
+        <div className="projectNavBar animated fadeIn">
+        
+        </div>
         <div className="projectsContainer animated fadeIn">
             <h2>{currentProject.name}</h2>
-            <img id="leftarrow" className="projectArrows" src={require("./Images/uparrow.png")} onClick={this.clickLeft} />
-            <img id="rightarrow" className="projectArrows" src={require("./Images/uparrow.png")} onClick={this.clickRight} />
+            <img id="leftarrow" className="projectArrows" src={require("./Images/prev.png")} onClick={this.clickLeft} />
+            <img id="rightarrow" className="projectArrows" src={require("./Images/next.png")} onClick={this.clickRight} />
             <a href={currentProject.website}><img src={require(`${currentProject.imageUrl}`)} className="projectImage"/></a>
             <a href={currentProject.github}><img id="githubproject" src={require("./Images/githubwhite.png")} /></a>
             <a href={currentProject.website}><img id="webproject" src={require("./Images/whiteglobe.png")} /></a>

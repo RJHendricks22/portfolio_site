@@ -56,32 +56,26 @@ h1 {
 #rightarrow {
   position: absolute;
   top: 49%;
-  right: 4%;
-  width: 25px;
-  height: 25px;
-  transform: rotate(90deg)
+  right: 2%;
+  width: 60px;
 }
 #rightarrow:hover {
-  width: 30px;
-  height: 30px;
+  width: 65px;
   top: 48.5%;
-  right: 3.5%;
+  right: 1.7%;
   transition-duration: .15s;
 }
 #leftarrow:hover {
-  width: 30px;
-  height: 30px;
+  width: 65px;
   top: 48.5%;
-  left: 3.5%;
+  left: 1.7%;
   transition-duration: .15s;
 }
 #leftarrow {
   position: absolute;
   top: 49%;
-  left: 4%;
-  width: 25px;
-  height: 25px;
-  transform: rotate(-90deg)
+  left: 2%;
+  width: 60px;
 }
 .projectArrows {
   opacity: .8;
