@@ -33,6 +33,7 @@ export class Projects extends Component {
     }
     this.clickRight = this.clickRight.bind(this)
     this.clickLeft = this.clickLeft.bind(this)
+    this.clickNav = this.clickNav.bind(this)
   };
   
   clickRight(action){
@@ -63,14 +64,28 @@ export class Projects extends Component {
     }
   }
   
+  clickNav(action){
+    action.preventDefault();
+    this.setState({
+      projectIndex: action.target.value
+    });
+  }
+  
   render(){
     let currentProject = this.state.projects[this.state.projectIndex]
     
-    let descriptionRender = currentProject.description.map( desc => <li>{desc}</li>);
+    let descriptionRender = currentProject.description.map( (desc, key) => <li key={key}>{desc}</li>);
                                      
-    let technologiesRender = currentProject.technologies.map( tech => <li>{tech}</li>);
+    let technologiesRender = currentProject.technologies.map( (tech, key) => <li key={key}>{tech}</li>);
     
-    let projectNavBar = this.state.projects.map( project => <li>{project.name}</li>);
+    let confirmProject = function(panel, val){
+      if (panel === val) {
+        return {color: 'deepskyblue', background: 'rgba(100,100,100,.5)'}
+      }
+    }
+    
+    let projectNavBar = this.state.projects.map( (project, index) => <li onClick={this.clickNav} value={index} key={index} style={confirmProject(this.state.projectIndex, index)}>{project.name}</li>);
+    
     
     return (
       <div id="myprojects">
