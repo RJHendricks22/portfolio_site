@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.4a924207.css",
-  "main.css.map": "static/css/main.4a924207.css.map",
-  "main.js": "static/js/main.8c1a9b1f.js",
-  "main.js.map": "static/js/main.8c1a9b1f.js.map",
+  "main.css": "static/css/main.8f0cea33.css",
+  "main.css.map": "static/css/main.8f0cea33.css.map",
+  "main.js": "static/js/main.efd91c79.js",
+  "main.js.map": "static/js/main.efd91c79.js.map",
   "static/media/2Lmpagc.jpg": "static/media/2Lmpagc.1af7b54a.jpg",
   "static/media/attrreader.png": "static/media/attrreader.23a3efd0.png",
   "static/media/brickbreaker.png": "static/media/brickbreaker.4ac2de31.png",
@@ -15,7 +15,9 @@
   "static/media/logo.svg": "static/media/logo.5d5d9eef.svg",
   "static/media/magiccardbuilder.png": "static/media/magiccardbuilder.4b6686a3.png",
   "static/media/nameplate.png": "static/media/nameplate.78e971db.png",
+  "static/media/next.png": "static/media/next.13d2464e.png",
   "static/media/portfoliobackground.png": "static/media/portfoliobackground.1cb222d5.png",
+  "static/media/prev.png": "static/media/prev.c8efd347.png",
   "static/media/titleblock.png": "static/media/titleblock.c1c179dc.png",
   "static/media/welcome1.png": "static/media/welcome1.ef1022cb.png",
   "static/media/whiteglobe.png": "static/media/whiteglobe.8a4d3dc2.png"

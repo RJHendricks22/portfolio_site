@@ -86,7 +86,6 @@ export class Projects extends Component {
     
     let projectNavBar = this.state.projects.map( (project, index) => <li onClick={this.clickNav} value={index} key={index} style={confirmProject(this.state.projectIndex, index)}>{project.name}</li>);
     
-    
     return (
       <div id="myprojects">
         <div className="projectNavBar animated fadeIn">
@@ -95,7 +94,7 @@ export class Projects extends Component {
         <div className="projectsContainer animated fadeIn">
             <img id="leftarrow" className="projectArrows" src={require("./Images/prev.png")} onClick={this.clickLeft} />
             <img id="rightarrow" className="projectArrows" src={require("./Images/next.png")} onClick={this.clickRight} />
-            <a href={currentProject.website}><img src={require(`${currentProject.imageUrl}`)} className="projectImage"/></a>
+            <a href={currentProject.website}><img id="projectImg" src={require(`${currentProject.imageUrl}`)}  className="projectImage"/></a>
           <div className="projectLinks">
             <a href={currentProject.github}><h2>GitHub</h2></a><br />
             <a href={currentProject.website}><h2>Website</h2></a>

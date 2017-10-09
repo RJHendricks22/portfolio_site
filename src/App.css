@@ -46,6 +46,7 @@ h1 {
 #myprojects h2 {
   font-family: "Play";
 }
+
 .projectNavBar {
   width: 70%;
   display: flex;
@@ -146,6 +147,7 @@ h1 {
   color: lightblue;
   transition-duration: .3s;
 }
+
 .myskillscontainer {
   width: 90em;
   height: 25em;
