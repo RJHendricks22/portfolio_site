@@ -62,6 +62,11 @@ h1 {
   text-align: center;
   cursor: pointer;
 }
+.projectNavBar li:hover{
+  background-color: rgba(100,100,100,.3);
+  color: lightblue;
+  transition-duration: .3s;
+}
 .projectsContainer {
   width: 70em;
   height: 32em;
@@ -197,9 +202,9 @@ h1 {
   word-spacing: 3px;
 }
 .aboutmecontainer img {
-  width: 205px;
-  height: 235px;
-  margin: 5px;
+  width: 12em;
+  height: 13em;
+  margin: .5em;
 }
 #footer {
   position: absolute;
@@ -226,6 +231,7 @@ h1 {
 
 .Navbar1 li {
   padding: .25em 1em;
+  text-align: center;
 }
 .Navbar1 li:hover{
   color: lightblue;
