@@ -63,7 +63,7 @@ h1 {
 }
 .projectsContainer {
   width: 70em;
-  height: 33.5em;
+  height: 32em;
   position: relative;
   background-color: rgba(100,100,100,.5);
   overflow: hidden;
@@ -92,53 +92,53 @@ h1 {
 }
 .projectImage {
   width: 35em;
-  height: 19em;
-/*
-  padding-right: 2.5em;
-  border-right: 2px solid white;
-*/
+  height: 20em;
 }
 #rightarrow {
   position: absolute;
-  top: 49%;
-  right: 2%;
-  width: 60px;
+  top: 4%;
+  right: 25%;
+  width: 5em;
 }
 #rightarrow:hover {
-  width: 65px;
-  top: 48.5%;
-  right: 1.7%;
+  width: 5.5em;
+  top: 3.5%;
+  right: 24.5%;
   transition-duration: .15s;
 }
 #leftarrow:hover {
-  width: 65px;
-  top: 48.5%;
-  left: 1.7%;
+  width: 5.5em;
+  top: 3.5%;
+  left: 24.5%;
   transition-duration: .15s;
 }
 #leftarrow {
   position: absolute;
-  top: 49%;
-  left: 2%;
-  width: 60px;
+  top: 4%;
+  left: 25%;
+  width: 5em;
 }
 .projectArrows {
   opacity: .8;
   cursor: pointer;
 }
-#githubproject {
-  float: left;
+.projectLinks {
+  float: right;
+  display: block;
   position: absolute;
-  top: 1em;
-  right: 8em;
-  width: 40px;
+  right: 1%;
+  bottom: 10%;
+  width: 10em;
 }
-#webproject {
-  float: left;
-  position: absolute;
-  top: 1em;
-  right: 5.3em;
-  width: 40px;
+.projectLinks h2{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+.projectLinks h2:hover{
+  color: lightblue;
+  transition-duration: .3s;
 }
 .myskillscontainer {
   width: 90em;
