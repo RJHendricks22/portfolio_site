@@ -242,6 +242,7 @@ h1 {
 
 .Navbar1 li {
   text-align: center;
+  padding: 5px;
 }
 
 .Navbar1 li:hover{
@@ -277,6 +278,9 @@ h1 {
   height: 50%;
   min-width: 300px;
 }
+.smallScreenButtons{
+  display: none;
+}
 @media(max-width: 900px){
   body {
     overflow: visible;
@@ -302,10 +306,70 @@ h1 {
   .Navbar1 li{
     display: block;
     padding: .1em;
-    border: solid 1px slategray;
-    margin: auto 0;
+    background: rgba(150,150,150,.5);
+    margin: 2px 0;
   }
   .aboutmecontainer {
 	font-size: 1.2em;
+  }
+  #myprojects {
+    display: block;
+    margin: 0;
+  }
+  
+  .projectsContainer {
+	display: block;
+    background: rgba(100,100,100,.3);
+    margin: auto 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  .projectNavBar {
+    display: block;
+    margin: 0 auto;
+  }
+  #leftarrow, #rightarrow {
+	display: none;
+  }
+  #projectImg {
+    width: 100%;
+    height: auto;
+    
+  }
+  .projectLinks{
+	display: block;
+    float: none;
+  }
+  .projectLinks a{
+    margin: auto 0;
+    position: fixed;
+    display: block;
+  }
+  .description {
+	display: block;
+    width: 95%;
+    padding: 0;
+    margin: auto 2.5%;
+    text-align: center;
+  }
+  .description li{
+    text-align: center;
+    margin: auto 0;
+    list-style: none;
+    font-size: 16px;
+  }
+  .smallScreenButtons {
+    display: block;
+  }
+  .smallScreenButtons h3{
+	width: 50%;
+    margin: 8px 0;
+    float: left;
+    text-align: center;
+  }
+  .smallScreenButtons h3:hover{
+    background: rgba(100,100,100,.3);
+    color: deepskyblue;
   }
 }
