@@ -268,10 +268,13 @@ h1 {
   text-align: center;
 }
 #welcomePanel {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  opacity: .7;
+  font-family: "Play", "Arial", sans-serif;
+  width: 70%;
+  text-align: center;
+  background: rgba(100,100,100,.5);
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 150px;
 }
 #welcomePanel img{
   width: 62.5%;
@@ -299,7 +302,7 @@ h1 {
   }
   .Navbar1 {
     display: block;
-    width: 80%;
+    width: 75%;
     margin-bottom: .5em;
     font-size: 1.8em;
   }
@@ -363,13 +366,12 @@ h1 {
     display: block;
   }
   .smallScreenButtons h3{
-	width: 50%;
+	width: 49%;
     margin: 8px 0;
     float: left;
     text-align: center;
   }
   .smallScreenButtons h3:hover{
-    background: rgba(100,100,100,.3);
     color: deepskyblue;
   }
 }

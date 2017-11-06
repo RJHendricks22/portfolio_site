@@ -28,6 +28,18 @@
   animation-duration: 2.5s;
   animation-fill-mode: both;
 }
+.animated6{
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+.animated7{
+  animation-delay: 3s;
+  animation-fill-mode: both;
+}
+.animated8{
+  animation-delay: 5s;
+  animation-fill-mode: both;
+}
 .animated.infinite {
   animation-iteration-count: infinite;
 }
