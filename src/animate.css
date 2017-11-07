@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 /*!
- * animate.css -http://daneden.me/animate
- * Version - 3.5.2
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2017 Daniel Eden
- */
+* animate.css -http://daneden.me/animate
+* Version - 3.5.2
+* Licensed under the MIT license - http://opensource.org/licenses/MIT
+*
+* Copyright (c) 2017 Daniel Eden
+*/
 
 .animated {
   animation-duration: 1s;
@@ -33,11 +33,11 @@
   animation-fill-mode: both;
 }
 .animated7{
-  animation-delay: 3s;
+  animation-delay: 2.5s;
   animation-fill-mode: both;
 }
 .animated8{
-  animation-delay: 5s;
+  animation-delay: 4s;
   animation-fill-mode: both;
 }
 .animated.infinite {
@@ -323,4 +323,27 @@
 .fadeOutUpBig {
   animation-name: fadeOutUpBig;
 }
+
+
+  .animatedSmall{
+    animation-delay: 5.5s;
+    animation-fill-mode: both;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes colorChange {
+    to {
+      color: lightskyblue;
+    }
+  }
+  .colorChange {
+    animation-name: colorChange;
+  }
 

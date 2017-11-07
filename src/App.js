@@ -38,7 +38,7 @@ class App extends Component {
     return (
       <div className="App">
         <Titleblock />
-        <div className="navbarcontainer">
+        <div className="navbarcontainer animatedSmall fadeIn animated">
         <ul className="Navbar1">
           <li onClick={this.centerViewPanel} style={confirmationStyle(this.state.centerView, 2)} value="2" >Projects</li>
           <li onClick={this.centerViewPanel} style={confirmationStyle(this.state.centerView, 1)} value="1" >Skills </li>

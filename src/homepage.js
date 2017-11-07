@@ -7,7 +7,8 @@ export class Homepage extends Component {
   render(){
     
     return(
-      <div id="welcomePanel" className="animated2 fadeIn">
+      
+      <div id="welcomePanel" className="animatedSmall colorChange animated">
         <h1 className="animated6 fadeIn animated">Hello, I'm Ray</h1>
         <h2 className="animated7 fadeIn animated">I'm a Full Stack Web Developer</h2>
         <h2 className="animated8 fadeIn animated">Please check out my work and links to my contact info! If you have any questions, email me at RayJHendricks22@gmail.com</h2>

@@ -12,6 +12,20 @@ body {
   color: white;
   overflow: hidden;
 }
+@keyframes blackBG{
+  from {
+    background-color: rgba(0,0,0,1);
+  }
+  to {
+    background-color: rgba(0,0,0,0);
+  }
+}
+#blackBG {
+  animation-name: blackBG;
+  animation-duration: 13s;
+  width: 100vw;
+  height: 100vh;
+}
 ul {
   padding: 0;
 }
@@ -271,7 +285,6 @@ h1 {
   font-family: "Play", "Arial", sans-serif;
   width: 70%;
   text-align: center;
-  background: rgba(100,100,100,.5);
   margin: 0 auto;
   padding: 20px;
   margin-top: 150px;
@@ -373,5 +386,9 @@ h1 {
   }
   .smallScreenButtons h3:hover{
     color: deepskyblue;
+  }
+  #welcomePanel {
+	margin-top: 30px;
+    background: none;
   }
 }
